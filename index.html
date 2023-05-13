@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>z SEBASTIAN</title>
+
+    <style>
+      /* OVO je komentar koji sluzi za programere  */
+
+      /* SELECTOR { 
+           STVAR-KOJU-STILIZUJEMO: vrednost
+           BOJA-TEKSTA: CRVENA
+      } */
+
+      /* CSS klase */
+      .crveni-okvir {
+        border: 2px solid red;
+      }
+      /* INLINE , kada ima style="" direktno u elementy */
+
+      /* po IDu */
+      #paragraf-za-izivljavanje {
+        color: orange;
+      }
+
+      /* .NAZIV_KLASE */
+      .crvena-slova {
+        color: red;
+      }
+
+      p {
+        color: blue;
+      }
+
+      h1 {
+        color: red;
+        font-size: 96px;
+      }
+      /* # NJEGOV ID */
+      #prvi-naslov {
+        color: blue;
+        font-size: 12px;
+      }
+      /* STO SI SPECIFICNIJI SA SPECIFIJACOM/SELEKTOROM
+        TO TI JE PRAVILO JACE */
+
+      #drugi-naslov {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- OVO JE KOMENTAR DA SE PODSETIM sta ovo radi 
+    ovo nece CHROME prikazati 
+  -->
+    <div class="crveni-okvir">
+      <h1 id="prvi-naslov" data-testid="prvi-naslov">OVO JE NASLOV</h1>
+      <p>Ovo je paragraf teksta</p>
+
+      <p>Ovo ide u novi red</p>
+
+      <a href="https://blic.rs" target="blank">Ovo ide na blic </a>
+      <span>Ovo je span </span>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Green_cogwheel.svg"
+      />
+    </div>
+    <h1 id="drugi-naslov" data-testid="drugi-naslov">OVO DRUGI JE NASLOV</h1>
+
+    <p
+      id="paragraf-za-izivljavanje"
+      class="crvena-slova crveni-okvir"
+      style="color: purple"
+    >
+      Neki tekst
+    </p>
+  </body>
+</html>
